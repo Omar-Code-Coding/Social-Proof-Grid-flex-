@@ -1,0 +1,27 @@
+.header {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-content: center;
+    align-items: center;
+}
+
+.headline {
+    display: grid;
+    grid-template-columns: minmax(min-content, 38rem);
+    grid-gap: 1rem;
+    grid-column: 1 / 2;
+    align-self: start;
+    align-items: center;
+
+    &__main {
+        width: 90%;
+        font-size: 3.5rem;
+        color: $color-primary-1;
+    }
+
+    &__sub {
+        color: $color-secondary-1;
+        line-height: 1.8;
+    }
+}

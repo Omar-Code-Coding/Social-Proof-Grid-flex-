@@ -1,0 +1,58 @@
+.testimonies {
+    grid-column: center-start / center-end;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
+    grid-template-rows: minmax(5rem, 25rem);
+    justify-content: space-between;
+    margin-top: 6.5rem;
+}
+
+.user {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1;
+    align-items: center;
+    padding: 2rem;
+    border-radius: .7rem;
+    background-color: $color-primary-1;
+
+    &__item {
+        margin: 1rem 1.8rem;
+    }
+
+    &__name {
+        color: $color-secondary-2;
+        margin-bottom: .2rem;
+    }
+
+    &__tag {
+        color: $color-primary-2;
+    }
+
+    &__img {
+        clip-path: circle(50% at 50% 50%);
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-left: .5rem;
+    }
+
+    &__review {
+        font-weight: 500;
+        line-height: 1.6;
+
+        margin: 1.2rem .5rem;
+        color: $color-secondary-2;
+    }
+}
+
+.colton {
+    margin-bottom: 4rem;
+}
+
+.irene {
+    margin: 2rem 0;
+}
+
+.anne {
+    margin-top: 4rem;
+}

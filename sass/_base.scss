@@ -1,0 +1,46 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, 
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;                //1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    background-color: rgb(196, 196, 196);
+}
+
+.container {
+    background-color: white;
+    margin: 4rem 4rem;
+    padding: 8rem 0;
+
+    display: grid;
+    grid-template-columns: [margin-start] minmax(1rem, 1fr) [center-start] repeat(8,[col-start] 1fr [col-end])
+                           [center-end margin-end] minmax(1rem, 1fr);
+    grid-template-rows: min-content;
+
+    background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-repeat: no-repeat;
+}
+
+.attribution {
+    grid-column: center-start / col-end 3 ;
+    align-self: end;
+    margin: 1rem;
+}
+
+
