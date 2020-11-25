@@ -5,3 +5,47 @@ $color-secondary-1: #937b92; //Dark Grayish Magenta
 $color-secondary-2: #f7f2f7; //Light Grayish Magenta
 
 $font-primary: 'spartan', sans-serif;
+
+
+@media (max-width: 76.8rem) {          //768px mobile.vr
+/////////////////////////////////////////////////////////
+////////////////HEADER
+    .header .headline {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        &__main {
+            width: 100%;
+            font-size: 3rem;
+            line-height: 1;
+        }
+    }
+
+    .rate .review,
+     .rate .report,
+      .rate .best {
+        margin: 0;
+    }
+    
+    .rate .rate__item {
+        justify-content: center;
+    }
+
+    .rate .rate__text {
+        margin-top: .5rem;
+    }
+
+//////////////////////////////////////////////////////
+////////////////TESTIMONIES
+    .testimonies .colton,
+     .testimonies .irene,
+      .testimonies .anne {
+          margin: .8rem;
+    }
+
+    .container .testimonies {
+        justify-content: center;
+        margin-top: 4rem;
+    }
+
+}

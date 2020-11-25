@@ -1,7 +1,7 @@
 .rate {
     display: grid;
     grid-template-columns: minmax(20rem, max-content);
-    grid-gap: 1rem;
+    grid-gap: 1.5rem;
     justify-self: end;
 
     &__item {
@@ -19,7 +19,6 @@
     &__text {
         color: $color-primary-1;
         order: 2;
-        //font-size: 1.2rem;
         margin-left: 1rem;
     }
 
@@ -32,9 +31,6 @@
             height: 1.35rem;
         }
     }
-
-
-
 }
 
 .review {

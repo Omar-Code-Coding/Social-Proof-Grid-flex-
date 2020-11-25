@@ -1,3 +1,39 @@
+@media (max-width: 76.8rem) {
+  .header .headline {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .header .headline__main {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .rate .review,
+  .rate .report,
+  .rate .best {
+    margin: 0;
+  }
+  .rate .rate__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rate .rate__text {
+    margin-top: .5rem;
+  }
+  .testimonies .colton,
+  .testimonies .irene,
+  .testimonies .anne {
+    margin: .8rem;
+  }
+  .container .testimonies {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +60,7 @@ body {
 
 .container {
   background-color: white;
-  margin: 4rem 4rem;
+  margin: 2rem 2rem;
   padding: 8rem 0;
   display: -ms-grid;
   display: grid;
@@ -43,7 +79,7 @@ body {
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-  margin: 1rem;
+  margin-top: 5rem;
 }
 
 .header {
@@ -66,7 +102,7 @@ body {
   -ms-grid-columns: minmax(min-content, 38rem);
       grid-template-columns: minmax(-webkit-min-content, 38rem);
       grid-template-columns: minmax(min-content, 38rem);
-  grid-gap: 1rem;
+  grid-gap: 2rem;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1 / 2;
@@ -92,8 +128,8 @@ body {
   grid-column: center-start / center-end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(25rem, 30rem))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(25rem, 30rem));
+  -ms-grid-columns: (minmax(29rem, 30rem))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(29rem, 30rem));
   -ms-grid-rows: minmax(5rem, 25rem);
       grid-template-rows: minmax(5rem, 25rem);
   -webkit-box-pack: justify;
@@ -129,7 +165,7 @@ body {
 }
 
 .user__tag {
-  color: #ee68a4;
+  color: #937b92;
 }
 
 .user__img {
@@ -141,8 +177,8 @@ body {
 }
 
 .user__review {
-  font-weight: 500;
-  line-height: 1.6;
+  font-weight: 400;
+  line-height: 1.7;
   margin: 1.2rem .5rem;
   color: #f7f2f7;
 }
@@ -159,13 +195,49 @@ body {
   margin-top: 4rem;
 }
 
+@media (max-width: 76.8rem) {
+  .header .headline {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  .header .headline__main {
+    width: 100%;
+    font-size: 3rem;
+    line-height: 1;
+  }
+  .rate .review,
+  .rate .report,
+  .rate .best {
+    margin: 0;
+  }
+  .rate .rate__item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .rate .rate__text {
+    margin-top: .5rem;
+  }
+  .testimonies .colton,
+  .testimonies .irene,
+  .testimonies .anne {
+    margin: .8rem;
+  }
+  .container .testimonies {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 4rem;
+  }
+}
+
 .rate {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(20rem, max-content);
       grid-template-columns: minmax(20rem, -webkit-max-content);
       grid-template-columns: minmax(20rem, max-content);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
   -ms-grid-column-align: end;
       justify-self: end;
 }

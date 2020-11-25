@@ -9,10 +9,12 @@
 .headline {
     display: grid;
     grid-template-columns: minmax(min-content, 38rem);
-    grid-gap: 1rem;
+    grid-gap: 2rem;
     grid-column: 1 / 2;
     align-self: start;
     align-items: center;
+
+    //margin-bottom: 4rem;
 
     &__main {
         width: 90%;
