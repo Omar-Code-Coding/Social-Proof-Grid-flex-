@@ -6,7 +6,6 @@
   .header .headline__main {
     width: 100%;
     font-size: 3rem;
-    line-height: 1;
   }
   .rate .review,
   .rate .report,
@@ -55,17 +54,18 @@ html {
 body {
   font-family: "spartan", sans-serif;
   font-weight: 400;
-  background-color: #c4c4c4;
 }
 
 .container {
   background-color: white;
-  margin: 2rem 2rem;
-  padding: 8rem 0;
+  padding: 10rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: [margin-start] minmax(1rem, 1fr) [center-start] ([col-start] 1fr [col-end])[8] [center-end margin-end] minmax(1rem, 1fr);
-      grid-template-columns: [margin-start] minmax(1rem, 1fr) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end margin-end] minmax(1rem, 1fr);
+  -ms-grid-columns: [margin-start] minmax(1rem, 13.5vw) [center-start] ([col-start] 1fr [col-end])[8] [center-end margin-end] minmax(1rem, 13.5vw);
+      grid-template-columns: [margin-start] minmax(1rem, 13.5vw) [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end margin-end] minmax(1rem, 13.5vw);
   -ms-grid-rows: min-content;
       grid-template-rows: -webkit-min-content;
       grid-template-rows: min-content;
@@ -116,6 +116,7 @@ body {
 .headline__main {
   width: 90%;
   font-size: 3.5rem;
+  line-height: 1;
   color: #502050;
 }
 
@@ -165,7 +166,7 @@ body {
 }
 
 .user__tag {
-  color: #937b92;
+  color: #ee68a4;
 }
 
 .user__img {
@@ -203,7 +204,6 @@ body {
   .header .headline__main {
     width: 100%;
     font-size: 3rem;
-    line-height: 1;
   }
   .rate .review,
   .rate .report,

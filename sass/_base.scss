@@ -19,17 +19,16 @@ html {
 body {
     font-family: $font-primary;
     font-weight: 400;
-    background-color: rgb(196, 196, 196);
 }
 
 .container {
     background-color: white;
-    margin: 2rem 2rem;
-    padding: 8rem 0;
+    padding: 10rem 0;
+    align-items: center;
 
     display: grid;
-    grid-template-columns: [margin-start] minmax(1rem, 1fr) [center-start] repeat(8,[col-start] 1fr [col-end])
-                           [center-end margin-end] minmax(1rem, 1fr);
+    grid-template-columns: [margin-start] minmax(1rem, 13.5vw) [center-start] repeat(8,[col-start] 1fr [col-end])
+                           [center-end margin-end] minmax(1rem, 13.5vw);
     grid-template-rows: min-content;
 
     background-image: url(/images/bg-pattern-top-desktop.svg), url(/images/bg-pattern-bottom-desktop.svg);
